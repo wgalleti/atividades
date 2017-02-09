@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from atividades.core.views import *
 
 urlpatterns = [
+    url(r'',index),
     url(r'^admin/', admin.site.urls),
     # jet
     url(r'^jet/', include('jet.urls', 'jet')),
